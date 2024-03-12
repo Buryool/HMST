@@ -1,0 +1,58 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\Administrator\\.ohos\\config\\auto_debug_Application_com.buryool.hmst_template_80086000136374217.cer",
+          "storePassword": "0000001B62E3A7B4295F99BFFA306A88119A221F1452B133836DBD3F36E0EF0901E094A88D56A48188912C",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B31DBE6359D46F99758E7B3BE22B59DC9DDDB00A879AC56FB6F6429E75BEE936CABEE1948EE4B6C",
+          "profile": "C:\\Users\\Administrator\\.ohos\\config\\auto_debug_Application_com.buryool.hmst_template_80086000136374217.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\auto_debug_Application_com.buryool.hmst_template_80086000136374217.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        //"buildOption": {
+        //  "packOptions": {
+        //    /**
+        //     * If the size of the HAP file of the atomic service's entry module
+        //     * is equal to or greater than the mainPackageLimitSize value, packaging will fail.
+        //     * If the HAP file is equal to or greater than 2 MB, it will fail to be released to AppGallery.
+        //     */
+        //    "mainPackageLimitSize": 2,
+        //
+        //    /**
+        //     * If the size of the HAP file of the atomic service's non-entry modules
+        //     * is equal to or greater than the normalPackageLimitSize value, packaging will fail.
+        //     * If the HAP file is equal to or greater than 2 MB, it will fail to be released to AppGallery.
+        //     */
+        //    "normalPackageLimitSize": 2
+        //  }
+        //}
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
